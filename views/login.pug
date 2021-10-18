@@ -1,0 +1,11 @@
+extends base
+
+block content 
+    form(action="",method="POST")
+        input(placeholder="Id", name="id", type="text", requireed)
+        input(placeholder="password", name="password", type="text", requireed)
+        input(type="submit", value="login")
+    div 
+        a(href="/join") 회원가입
+        span
+            i.fas.fa-hand-point-right
