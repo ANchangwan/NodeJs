@@ -1,5 +1,7 @@
 import express, { application } from "express";
 import app from "./app";
+import User from "./models/User";
+import "./db";
 
 const PORT = 4000;
 

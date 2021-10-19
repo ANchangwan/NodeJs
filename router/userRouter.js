@@ -1,11 +1,11 @@
 import Express  from "express";
-import { main, getLogin, postLogin,join } from "../controller/loginController";
+import { main, getLogin, postLogin, getJoin, postJoin } from "../controller/loginController";
 
 const userRouter = Express.Router();
 
-userRouter.route("/login").get(getLogin).post(postLogin);
 userRouter.get("/main", main);
-userRouter.get("/join", join);
+userRouter.route("/join").get(getJoin).post(postJoin);
+userRouter.route("/login").get(getLogin).post(postLogin);
 
 
 export default userRouter;
